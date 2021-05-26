@@ -88,7 +88,7 @@ function filterQuarter() {
     };
     console.log(postData)
     $.ajax({
-        url: "http://127.0.0.1:5000/" +"predict",
+        url: "https://predict-nfl.herokuapp.com/" +"predict",
         type: "POST",
         data : JSON.stringify(postData),
         contentType: "application/json",
